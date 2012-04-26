@@ -3,7 +3,7 @@ module Gaskit
     include Toy::Store
     self.include_root_in_json = false
 
-    store :git, Gaskit.repo, :branch => 'gaskit', :path => 'stories'
+    store :git, Gaskit.repo, :branch => Gaskit.branch, :path => 'stories'
 
     attribute :description, String
     attribute :type,        String, :default => 'feature'

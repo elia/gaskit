@@ -8,7 +8,7 @@ module Gaskit
     end
 
     def self.adapter
-      Adapter[:git].new(Gaskit.repo, :branch => 'gaskit')
+      Adapter[:git].new(Gaskit.repo, :branch => Gaskit.branch)
     end
 
     def self.all
